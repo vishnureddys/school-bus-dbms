@@ -6,7 +6,6 @@ D_no int UNIQUE NOT NULL,
 D_Name varchar(200) NOT NULL,
 Age int NOT NULL,
 Salary int NOT NULL,
-Phone_Number int NOT NULL,
 PRIMARY KEY(D_no)
 );
 
@@ -63,6 +62,3 @@ PRIMARY KEY(Transaction_ID)
 
 ALTER TABLE Student
 ADD CONSTRAINT Valid_Sid CHECK (Student_ID>=1000 AND Student_ID<=9999);
-
-ALTER TABLE Driver
-ADD CONSTRAINT Valid_Phno CHECK (Phone_number>=1000000000 AND Phone_number<=999999999);
